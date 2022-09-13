@@ -1,0 +1,9 @@
+{%include 'firstapp/navbar.html'%}
+<h1>Temp</h1>
+<div>
+    {%for room in rooms%}
+    <div>
+       <h4> {{room.id}}-- <a href="/home/{{room.id}}">{{room.name}}</a>{{room.login}}> </h4>
+    </div>
+    {%endfor%}
+</div>
