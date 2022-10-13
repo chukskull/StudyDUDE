@@ -1,0 +1,17 @@
+{%include 'firstapp/navbar.html'%}
+{% block content %}
+
+<div>
+    <form method="POST" action= "">
+       {% csrf_token %}
+       <label>Username:</label>
+       <input type="text" name="username" placeholder="Enter Your username"/>
+        <input type="submit" value="login"/> 
+        <label>Password: </label>
+        <input type="Password" name="Password" placeholder="Enter Your Password"/>
+        <input type="submit" value="login"/> 
+
+    </form>
+</div>
+
+{%endblock content%}
